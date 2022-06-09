@@ -59,7 +59,7 @@ h1 {
 #equal {
   grid-column: 1 / 5;
 }
-
+/* overides the previous styling of buttons for equal */
 #equal:hover {
   background-color: greenyellow;
   color: black;
@@ -70,4 +70,6 @@ h1 {
   background-color: aliceblue;
   color: black;
   transition: 0.5s ease-in-out;
+  background-color: red;
+  color: black;
 }

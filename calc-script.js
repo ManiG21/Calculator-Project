@@ -5,20 +5,20 @@ let output = document.querySelector("#product")
 let answer = document.querySelector("#equal")
 
 // Causees 0 to be a placeholder when you first load calc
-function inputChange(e) {                
-  if(output.innerText === "0"){           
-    output.innerText = ""    
+function inputChange(e) {
+  if (output.innerText === "0") {
+    output.innerText = ""
   }
   // Allows numbers to be inputed in screen
   let targetElement = e.target
   let buttonValue = targetElement.innerText
   output.innerText += buttonValue
-    
+
 }
 
-function allEventListeners(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    nums[i].addEventListener("click", inputChange)
+function allEventListeners(all) {
+  for (let i = 0; i < all.length; i++) {
+    all[i].addEventListener("click", inputChange)
   }
 }
 allEventListeners(numbersAll)
@@ -28,7 +28,6 @@ allEventListeners(operationsAll)
 function clearDelete() {
   output.innerText = ""
 }
-output.addEventListener("click", clearDelete)
 clearBox.addEventListener("click", clearDelete)
 
 // parseFloat had to be used instead of parseInt because parseFloat includes decimals
@@ -40,27 +39,30 @@ function outputScreen(screenItems) {
     } else if (screenItems[i] === '-') {
       let subtraction = screenItems.split("-")
       return (parseFloat(subtraction[0]) - parseFloat(subtraction[1]))
-    }else if (screenItems[i] === 'x') {
+    } else if (screenItems[i] === 'x') {
       let multiplication = screenItems.split("x")
       return (parseFloat(multiplication[0]) * parseFloat(multiplication[1]))
     } else if (screenItems[i] === '÷') {
       let division = screenItems.split("÷")
       return (parseFloat(division[0]) / parseFloat(division[1]))
-    }else if (screenItems[i] === '√') {
+    } else if (screenItems[i] === '√') {
       let squareRoot = screenItems.split("√")
-      return (parseFloat( Math.sqrt(squareRoot[0])) )
-    }else if (screenItems[i] === '^') {
+      return (parseFloat(Math.sqrt(squareRoot[0])))
+    } else if (screenItems[i] === '^') {
       let squared = screenItems.split("^")
       return Math.pow(parseInt(squared[0]), parseInt(squared[1]))
+      // }else if (screenItems[i] === '+')(screenItems[i] === 'x'); {
+      // let orderx = screenItems.split("+", "x")
+      // return (parseFloat(addition[0]) + (parseFloat(multiplication[0]) * parseFloat(multiplication[1])))
+      //   }else if (screenItems[1] === '+',  screenItems[4] ==='x')
+      //   return parseFloat[0] + parseFloat[3] * parseFloat[5]
     }
   }
 }
 
-
+// Adds product to calculator after pressing the equal button
 function equalsButton() {
   output.innerText = outputScreen(output.innerText)
 }
 answer.addEventListener("click", equalsButton)
 // return(parseInt(addition[0])+parseInt(addition[1]))
-
-// .reset()
