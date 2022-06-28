@@ -3,9 +3,13 @@
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 50px 50px 50px 50px 50px;
   justify-content: center;
-  font-size: 300%;
+  /* font-size: 300%; */
 }
 
+/* #Music1 {
+  background-color: blue;
+
+} */
 
 
 button {
@@ -52,13 +56,16 @@ h1 {
   font-style: italic;
 }
 
+/* Increased the size of input screen */
 #product {
   grid-column: 1 / 5;
 }
 
+/* increased the size equal button */
 #equal {
   grid-column: 1 / 5;
 }
+
 /* overides the previous styling of buttons for equal */
 #equal:hover {
   background-color: greenyellow;
@@ -67,8 +74,8 @@ h1 {
 }
 
 #clear:hover {
-  background-color: aliceblue;
-  color: black;
+  /* background-color: aliceblue;
+  color: black; */
   transition: 0.5s ease-in-out;
   background-color: red;
   color: black;
