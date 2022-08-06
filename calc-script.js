@@ -51,11 +51,11 @@ function outputScreen(screenItems) {
     } else if (screenItems[i] === '^') {
       let squared = screenItems.split("^")
       return Math.pow(parseInt(squared[0]), parseInt(squared[1]))
-      // }else if (screenItems[i] === '+')(screenItems[i] === 'x'); {
+      // }else if (screenItems[i] === '+' && screenItems[i] === 'x') {
       // let orderx = screenItems.split("+", "x")
       // return (parseFloat(addition[0]) + (parseFloat(multiplication[0]) * parseFloat(multiplication[1])))
-      //   }else if (screenItems[1] === '+',  screenItems[4] ==='x')
-      //   return parseFloat[0] + parseFloat[3] * parseFloat[5]
+        // }else if (screenItems[i] === '+' && screenItems[i] ==='x')
+        // return parseFloat(addition[0]) + (parseFloat(multiplication[0]) * parseFloat(multiplication[1]))
     }
   }
 }
