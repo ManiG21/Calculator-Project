@@ -14,9 +14,11 @@
 
 button {
   color: red;
-  border: 2px solid red;
+  /* border: 2px solid rgb(245, 238, 238); */
+  border: 3px solid rgb(208, 3, 3);
   background-color: black;
   font-size: 37px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 
 }
@@ -36,24 +38,30 @@ button {
 }
 
 .Calculator-Screen {
-  border: 8px solid black;
+  border: 5px solid rgb(174, 6, 6);
   background-color: aliceblue;
-  height: 60px;
+  height: 70px;
   width: auto;
-  font-size: 40px;
+  font-size: 42px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: right;
   overflow: hidden;
+  padding-bottom: 10px;
 
 
 }
 
 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 80px;
   text-decoration: underline;
   background-color: red;
   border: 4px solid black;
   font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
 }
 
 /* Increased the size of input screen */
