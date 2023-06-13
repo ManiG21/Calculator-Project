@@ -3,10 +3,18 @@
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 50px 50px 50px 50px 50px;
   justify-content: center;
-  
-  
-}
+  animation: 3s slideup ease;
 
+
+}
+@keyframes slideup {
+  0% {
+    bottom:-200px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 /* #Music1 {
   background-color: blue;
 } */
@@ -20,14 +28,8 @@ button {
   font-size: 40px;
   /* text-shadow: 1px 2px 0px rgb(200, 197, 197); */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-  @keyframes slideup {
-    0% {
-      bottom:-200px;
-    }
-    100% {
-      bottom: 0;
-    }
+
+
 }
 
 body {
@@ -62,7 +64,8 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: right;
   overflow: hidden;
-padding-bottom: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
 
 }
 
