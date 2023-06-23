@@ -21,14 +21,17 @@
 
 
 button {
-  color: red;
+  /* color: red; */
+  color: rgb(10, 10, 10);
   border: 2px solid rgb(245, 238, 238);
   border: 3px  solid rgb(208, 3, 3);
-  background-color: black;
+  /* background-color: black; */
+  /* background: linear-gradient(170deg, #00CED1,#C4BFBF); */
+  background: linear-gradient(170deg, #870101,#C4BFBF);
   font-size: 40px;
   /* text-shadow: 1px 2px 0px rgb(200, 197, 197); */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  cursor: pointer;
 
 }
 
@@ -66,6 +69,7 @@ body {
   overflow: hidden;
   padding-bottom: 10px;
   padding-right: 5px;
+
 
 }
 
