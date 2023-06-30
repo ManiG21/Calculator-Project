@@ -86,6 +86,11 @@ h1 {
 
 }
 
+#Sonic {
+  position: fixed;
+  padding-left: 50px;
+}
+
 /* Increased the size of input screen */
 #product {
   grid-column: 1 / 5;
